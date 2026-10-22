@@ -2,7 +2,7 @@ async function mostrarPosts() {
     const lista = document.querySelector("#posts");
     try {
         // 1. Haz el fetch a la URL de las publicaciones del usuario 1
-        const res = await fetch("https://jsonplaceholder.typicode.com/posts_error?userId=1");
+        const res = await fetch("https://jsonplaceholder.typicode.com/posts?userId=1");
         
         // Comprobar si la respuesta fue exitosa (status 200 OK)
         if (!res.ok) {
